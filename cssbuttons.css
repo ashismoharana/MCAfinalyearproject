@@ -1,0 +1,56 @@
+.button1 {
+  background-image: linear-gradient(to bottom right,#008CBA,blue); 
+  border: 2px solid grey;
+  color: white;
+  padding:8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor:pointer;
+
+}
+.button1:hover {
+  background-image: linear-gradient(white,white); 
+  border: 2px solid #008CBA; 
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {
+  background-image: linear-gradient(to bottom right,black,black); 
+  border: 2px solid darkorange;
+  color: white;
+  padding:8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor:pointer;
+}
+.button2:hover {
+  background-image: linear-gradient(darkorange,darkorange); 
+  border: 2px solid black; 
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button3 {
+  border-radius: 5px;
+	background: white;
+	background-position: left-top;
+	background-repeat: repeat;
+	border: 2px solid blue; 
+    color: black;
+	width: 265px;
+	height: 25px;
+
+}
+.button3:hover {
+  background-color:darkblue;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

@@ -1,0 +1,140 @@
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="mycssbuttons.css">
+    <title>Menu Page</title>
+        <script language="javascript">
+		var imgs=new Array();
+		imgs[0]="old1.jpeg";
+		imgs[1]="old2.jpeg";
+		imgs[2]="old10.jpeg";
+		imgs[3]="old4.jpeg";
+		imgs[4]="old5.jpeg";
+		imgs[5]="old6.jpeg";
+		imgs[6]="old7.jpeg";
+		imgs[7]="old8.jpeg";
+		imgs[8]="old9.jpeg";
+		
+		var i=0;
+		function slideshow()
+		{
+			i=i+1;
+			if(i>8)
+			i=0;
+			document.f1.imgslide.src=imgs[i];
+			setTimeout("slideshow()",2000);
+		}
+		
+
+          function Hilight(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="orange";
+			  cid.style.color="black";
+          }
+		  function Normal(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="black";
+		  }
+		   function showsearch(id)
+		  {
+              cid=document.getElementById(id);
+			  
+              cid.src="schp_subsrch.html";
+          }
+		 
+		  function showmast(id)
+		  {
+              cid=document.getElementById(id);
+			  cid.src="schp_submast.html";
+          }
+		  function showmgmt(id)
+		  {
+              cid=document.getElementById(id);
+			 
+              cid.src="schp_submgmt.html";
+          }
+		  function showsrpt(id)
+		  {
+              cid=document.getElementById(id);
+			 
+              cid.src="schp_subsrpt.html";
+          }
+		  function showdrpt(id)
+		  {
+              cid=document.getElementById(id);
+			 
+              cid.src="schp_subdrpt.html";
+          }
+		  
+		 </script>
+  </head>
+  <body background="bk4.jpg" onload="slideshow(),showTimeDate()">
+  
+  <form name="f1">
+   <center>
+<table width="98%"  border="0" >
+<tr height="70">
+<td align="center" valign="middle" background="image5.jpeg">
+<font face="copperplate gothic" color="yellow" size="4.5">
+<sub>
+ </sub>
+ <b>Senior Citizen Help Portal</b>
+</font>
+</td>
+</tr></table></center>
+
+<center> 
+  <table style="width:98%; height=450">
+  <tr height="30" >
+  
+	<td style="border-radius:7px" align="center" id="srch" bgcolor="black" onmouseover="Hilight('srch')" onmouseout="Normal('srch')">
+	<a href="schp_about.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">About</font></a></td>
+	
+	<td style="border-radius:7px" align="center" id="help" bgcolor="black" onmouseover="Hilight('help')" onmouseout="Normal('help')">
+	<a href="schp_rptsinfocatc.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">Help</font></a></td>
+	
+	<td style="border-radius:7px" align="center" id="rch" bgcolor="black" onmouseover="Hilight('rch')" onmouseout="Normal('rch')">
+	<a href="schp_reach.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">Reach Us</font></a></td>
+	
+	<td style="border-radius:7px" align="center" id="mast" bgcolor="black" onmouseover="Hilight('mast')" onmouseout="Normal('mast')" onclick="showmast('subcontainer')">
+	<font face="Lucida Console" color="white" size="2">Master</font></td>  
+	
+	<td	style="border-radius:7px" align="center" id="mgmt" bgcolor="black" onmouseover="Hilight('mgmt')" onmouseout="Normal('mgmt')" onclick="showmgmt('subcontainer')">
+	<font face="Lucida Console" color="white" size="2">Management</font></td>  
+	
+	<td style="border-radius:7px" align="center" id="srpt" bgcolor="black" onmouseover="Hilight('srpt')" onmouseout="Normal('srpt')" onclick="showsrpt('subcontainer')">
+	<font face="Lucida Console" color="white" size="2">Summary Report</font></td>  
+	
+	<td style="border-radius:7px" align="center" id="drpt" bgcolor="black" onmouseover="Hilight('drpt')" onmouseout="Normal('drpt')" onclick="showdrpt('subcontainer')">
+	<font face="Lucida Console" color="white" size="2">Detailed Report</font></td>  
+<td style="border-radius:7px" align="center" id="log" bgcolor="black" onmouseover="Hilight('log')" onmouseout="Normal('log')">
+	<a href="index.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">Log Off</font></a></td>  
+ 
+ </tr>
+</table>
+  </center>
+  <br>
+  
+  <center>
+  <table width="98%">
+  <tr height="350">
+	<td colspan="3" background="hand2.jpeg">
+	<iframe id="subcontainer" width="310" height="350" background="fimg1.gif"></iframe></td>
+    <td colspan="4"><img src="logo3.gif" border="2" name="imgslide" width="910" height="350"></td>
+  </tr>
+  </table>
+  </center>
+  <br>
+  
+<center><hr width="98%" size="2" color="red"></center>
+
+<center>
+<table width="98%"  border="0" >
+<tr height="50"><td align="middle" bgcolor="black" background=image5.jpeg">
+<font color="white" size="4" ><b>&copy; Help Age Care Center</b></td>
+</tr></table></center>
+  
+  </form>
+  </body>
+  </html>

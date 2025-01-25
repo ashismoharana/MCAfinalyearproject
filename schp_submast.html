@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Menu Page</title>
+        <script language="javascript">
+          function Hilight(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="orange";
+          }
+		  function Normal(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="black";
+		  }
+		</script>
+  </head>
+  <body background="image5.jpeg">
+  <table width="200">
+  <tr height="26" >
+	<td width="180" nowrap="nowrap" id="id1" bgcolor="black" onmouseover="Hilight('id1')" onmouseout="Normal('id1')" style="border-radius:5px">
+	<a href="schp_orgnc.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">Organisation Information</font></a></td> 
+  </tr>
+  <tr height="26">
+	<td width="180" nowrap="nowrap" id="id2" bgcolor="black" onmouseover="Hilight('id2')" onmouseout="Normal('id2')" style="border-radius:5px">
+	<a href="schp_companyc.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">Company Information</font></a></td> 
+  </tr>
+  <tr height="26" >
+	<td width="180" nowrap="nowrap" id="id3" bgcolor="black" onmouseover="Hilight('id3')" onmouseout="Normal('id3')" style="border-radius:5px">
+	<a href="schp_prodcatgc.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">Product Category Information</font></a></td> 
+  </tr>
+  <tr height="26" >
+	<td width="180" nowrap="nowrap" id="id4" bgcolor="black" onmouseover="Hilight('id4')" onmouseout="Normal('id4')" style="border-radius:5px">
+	<a href="schp_productinfoc.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">Product Information</font></a></td> 
+  </tr><tr height="26" >
+	<td width="180" nowrap="nowrap" id="id5" bgcolor="black" onmouseover="Hilight('id5')" onmouseout="Normal('id5')" style="border-radius:5px">
+	<a href="schp_servtypec.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="white" size="2">Service Category Information</font></a></td> 
+  </tr>
+  
+    </table>
+  </body>
+  </html>

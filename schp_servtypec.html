@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Service type info client page</title>
+<script language="javascript">
+function gofind(){
+	window.location="schp_servtypefc.jsp";
+	}
+</script>
+<style type="text/css">
+.btn{
+	background-color:pink;
+	font-size:19px;
+	border-radius:10px;
+	padding:1px;
+	cursor:pointer;
+	width:120px;
+	height:50px;
+	border-color:black;
+	}
+
+	.input1{
+	width:200px;
+	border-radius:10px;
+	width:200px;
+	height:30px;
+	border-style:dotted;
+	}
+	td{
+  font-size:22px;
+  }
+  
+	
+	</style>
+</head>
+<body background="img.jpg">
+<hr width="100%" color="blue" size="5">
+<h2 align="center"><u>SERVICE TYPE INFORMATION</u></font>
+<center>
+<form name="f1" action="schp_servtypes.jsp" method="post">
+<table width="600" border="0"><br><br>
+<td>Service type code:</td>
+<td><input type="text" name="txtservcode" required class="input1" autocomplete="off"></td>
+<tr>
+</tr>
+<tr>
+<td>Service type name:</td>
+<td><input type="text" name="txtservname" required class="input1" autocomplete="off"></td>
+</tr>
+<tr>
+</table><br>
+<input type="submit" name="btnsub" value="Submit" class="btn">
+<input type="button" name="btnfind" value="Find" class="btn" onclick="gofind()">
+<input type="reset" name="btnres" value="Reset" class="btn">
+<hr width="100%" color="red" size="5"><br><br>
+&copy;Senior citizen helpline portal-providing helping hand<br>
+Bidyadharpur,cuttack-753004.
+</center>
+</form>
+</body>
+</html>
